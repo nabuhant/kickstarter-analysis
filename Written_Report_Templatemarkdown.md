@@ -24,3 +24,4 @@
 
 ## Challenges
 * YEAR() function did not provide the correct output since column where the function was being applied had short date type. I tested the function YEAR(TODAY()) on a new sheet an it worked. The difference was that the data type there was general. This issue was resolved by setting the Year column's data type to general. 
+* PivotTables fields were missing when a new column is added. This issue was resolved by refreshing the pivot table (right-click on table and click referesh. refreshes table cache)
