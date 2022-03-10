@@ -30,3 +30,7 @@ https://answers.microsoft.com/en-us/msoffice/forum/all/missing-column-from-table
 ## Learned
 * Grouping/Ungrouping of pivot table fields, especially dates
 https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable-c9d1ddd0-6580-47d1-82bc-c84a5a340725?ui=en-us&rs=en-us&ad=us
+
+## To ASK
+* From deliverable 1: The row labels are changed to display the months of the year, and ???the campaign outcomes are sorted in descending order??? (5 pt).
+
