@@ -11,7 +11,7 @@ Describe the steps you followed and explain the code with snippets
 
 ### Analysis of Outcomes Based on Goals
 Describe the steps you followed and explain the code with snippets
-
+![image1](kickstarter-analysis/Resources/Outcomes_vs_Goals.png)
 ### Challenges and Difficulties Encountered
 #### YEAR() Function
 YEAR() function did not provide the correct output since column where the function was being applied had short date type. I tested the function YEAR(TODAY()) on a new sheet an it worked. The difference was that the data type there was general. This issue was resolved by setting the Year column's data type to general
