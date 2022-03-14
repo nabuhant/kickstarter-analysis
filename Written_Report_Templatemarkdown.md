@@ -8,10 +8,11 @@
 
 ### Analysis of Outcomes Based on Launch Date
 Describe the steps you followed and explain the code with snippets
+![image1](https://raw.githubusercontent.com/nabuhant/kickstarter-analysis/main/Resources/Theater_Outcomes_vs_Launch.png?token=GHSAT0AAAAAABSKACJ2B45BO5BISPWMSR52YROQ3SQ)
 
 ### Analysis of Outcomes Based on Goals
 Describe the steps you followed and explain the code with snippets
-![image1](kickstarter-analysis/Resources/Outcomes_vs_Goals.png)
+![image2](https://raw.githubusercontent.com/nabuhant/kickstarter-analysis/main/Resources/Outcomes_vs_Goals.png?token=GHSAT0AAAAAABSKACJ2Y35M25GI3JMPQ3RYYROQ2KQ)
 ### Challenges and Difficulties Encountered
 #### YEAR() Function
 YEAR() function did not provide the correct output since column where the function was being applied had short date type. I tested the function YEAR(TODAY()) on a new sheet an it worked. The difference was that the data type there was general. This issue was resolved by setting the Year column's data type to general
