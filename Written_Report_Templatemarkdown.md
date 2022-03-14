@@ -9,7 +9,7 @@
 ### Analysis of Outcomes Based on Launch Date
 Describe the steps you followed and explain the code with snippets
 ![image1](https://raw.githubusercontent.com/nabuhant/kickstarter-analysis/main/Resources/Theater_Outcomes_vs_Launch.png?token=GHSAT0AAAAAABSKACJ2B45BO5BISPWMSR52YROQ3SQ)
-
+![image3](/Resources/Outcomes_vs_Goals.png)
 ### Analysis of Outcomes Based on Goals
 Describe the steps you followed and explain the code with snippets
 ![image2](https://raw.githubusercontent.com/nabuhant/kickstarter-analysis/main/Resources/Outcomes_vs_Goals.png?token=GHSAT0AAAAAABSKACJ2Y35M25GI3JMPQ3RYYROQ2KQ)
