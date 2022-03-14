@@ -23,7 +23,7 @@ Beyond viewing the sum of successful, failed, and cancelled campaigns for each m
 >Unix Timestamp to readable date code: =(((cell_of_launched_at/60)/60)/24)+DATE(1970,1,1)  
 
 **2.** The **YEAR()** function was then applied to the "Created Date" column to extract the year value of the campaign's created date. This value was stored in the "Years" column.  
-**3.** The entirety of the data was used to create a PivotTable. The table's column data is the outcomes (filtered to exclude live campaigns), rows is the Created Date (by months after the year value is ungrouped), the values is the count of outcomes, and it is filtered by the years and Parent Category (theater).  
+**3.** The entirety of the data was used to create a PivotTable. The table's column data is the outcomes (filtered to exclude live campaigns and sorted in descending order), rows is the Created Date (the value was [grouped](https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable-c9d1ddd0-6580-47d1-82bc-c84a5a340725?ui=en-us&rs=en-us&ad=us) by months), the values is the count of outcomes, and it is filtered by the years and Parent Category (theater).  
 **4.** The PivotTable was finally used to create the line graph.
 ### Analysis of Outcomes Based on Goals Describe the steps you followed and explain the code with snippets
 Below is the Outcomes vs. Goals line graph visualising the percentage of successful, cancelled, and failed campaigns in relation the their goals.
@@ -42,13 +42,10 @@ In the case of the code below, the conditions set will only increase the count b
 **4.** Dividing the total of number of each outcome by the total project, and setting the data style to "Percent" was used to calculate the percentage values. The calculated percentage values for each outcome were graphed against the goal ranges as a line graph.     
 ### Challenges and Difficulties Encountered
 #### YEAR() Function
-YEAR() function did not provide the correct output since column where the function was being applied had short date type. I tested the function YEAR(TODAY()) on a new sheet an it worked. The difference was that the data type there was general. This issue was resolved by setting the Year column's data type to general
+Initially, the **YEAR()** function did not provide the correct output since the column where the function was being applied had a 'Short Date' number type. I tested the function **YEAR(TODAY())** on a new sheet and it worked. The difference was that the number type there was 'General'. This issue was resolved by setting the Year column's number type to 'General' in the Kickstarter sheet.
 #### PivotTables Features
-* PivotTables fields were missing when a new column is added. This issue was resolved by refreshing the pivot table (right-click on table and click referesh. refreshes table cache)
-https://answers.microsoft.com/en-us/msoffice/forum/all/missing-column-from-table-in-pivot-table-field/4f85a8b5-50c9-45b7-8b5e-b8481984995a
-Learned
-* Grouping/Ungrouping of pivot table fields, especially dates
-https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable-c9d1ddd0-6580-47d1-82bc-c84a5a340725?ui=en-us&rs=en-us&ad=us
+PivotTables fields were missing in the fields list when new columns where added (i.e. "Years") . This issue was resolved by refreshing the pivot table (right-click on table and click referesh, refreshing the table cache). The solution was found [here](https://answers.microsoft.com/en-us/msoffice/forum/all/missing-column-from-table-in-pivot-table-field/4f85a8b5-50c9-45b7-8b5e-b8481984995a).
+
 
 ## Results (in complete and coherent sentences)
 
@@ -59,16 +56,4 @@ https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable
 - What are some limitations of this dataset?
 
 - What are some other possible tables and/or graphs that we could create?
-
-## Challenges
-* YEAR() function did not provide the correct output since column where the function was being applied had short date type. I tested the function YEAR(TODAY()) on a new sheet an it worked. The difference was that the data type there was general. This issue was resolved by setting the Year column's data type to general. 
-* PivotTables fields were missing when a new column is added. This issue was resolved by refreshing the pivot table (right-click on table and click referesh. refreshes table cache)
-https://answers.microsoft.com/en-us/msoffice/forum/all/missing-column-from-table-in-pivot-table-field/4f85a8b5-50c9-45b7-8b5e-b8481984995a
-
-## Learned
-* Grouping/Ungrouping of pivot table fields, especially dates
-https://support.microsoft.com/en-us/office/group-or-ungroup-data-in-a-pivottable-c9d1ddd0-6580-47d1-82bc-c84a5a340725?ui=en-us&rs=en-us&ad=us
-
-## To ASK
-* From deliverable 1: The row labels are changed to display the months of the year, and ???the campaign outcomes are sorted in descending order??? (5 pt).
 
